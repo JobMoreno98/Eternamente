@@ -52,6 +52,7 @@ export const getTasks = async (req, res) => {
 }
 export const createTask = async (req, res) => {
     const conecion = await connect()
+    console.log(req.body);
     const [result] = await conecion.query("Select id from users where name = ?", [req.body.description])
     const id_doctor = result[0];
     if (id_doctor === undefined) {

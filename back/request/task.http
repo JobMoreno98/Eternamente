@@ -1,10 +1,13 @@
-GET http://192.168.100.14:3000/task/Job Moreno
+GET http://148.202.134.129:3000/task/Raziel Chavez Razo
 
 ### 
-POST http://192.168.100.14:3000/task
+POST http://148.202.134.129:3000/task
 Content-Type: application/json
 
 {
-    "title": "Job",
-    "description": "job"
+    "title": "Raziel Chavez Razo",
+    "description": "Job Moreno"
 }
+
+
+where('aadsf','like','%Belenes%')

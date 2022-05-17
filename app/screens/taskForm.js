@@ -15,7 +15,7 @@ export default function TaskForm({ navigation }) {
   const createTwoButtonAlert = ({ result }) =>
     Alert.alert(
       "Incorrecto",
-      "Nombre o Contraseña incorrectos, favor de ingresarlos nuevamente"
+      "Alguno de los nombres es incorrecto, favor de ingresarlos nuevamente"
     );
   const submit = async () => {
     const result = await login(task)

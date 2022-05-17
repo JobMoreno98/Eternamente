@@ -18,6 +18,6 @@ export default function TaskList({ task }) {
 
 const styles = StyleSheet.create({
     FlatList: {
-        width: "90%"
+        width: "90%",
     }
 })

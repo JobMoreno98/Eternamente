@@ -23,6 +23,7 @@ const App = () => {
         <Stack.Screen name="TaskForm" component={TaskForm}
           options={({ navigation }) => ({
             title: 'Inicio de Sesión',
+            headerLeft: ()=> null,
             headerStyle: {
               backgroundColor: 'indigo'
             },

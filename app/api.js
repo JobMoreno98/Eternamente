@@ -1,5 +1,5 @@
 export const getTask = async (nombre) => {
-  const url = new URL("http://192.168.100.14:3000/task/" + nombre['nombre']);
+  const url = new URL("task/" + nombre['nombre'],'http://148.202.134.129:3000/');
     const result = await fetch(url,{
       method: "GET",
       headers: {
@@ -11,7 +11,8 @@ export const getTask = async (nombre) => {
 };
 
 export const login = async (newTask) => {
-    const result = await fetch("http://192.168.100.14:3000/task", {
+    const url = new URL("task/",'http://148.202.134.129:3000/');
+    const result = await fetch(url, {
       method: "POST",
       headers: {
         Accept: "application/json",
